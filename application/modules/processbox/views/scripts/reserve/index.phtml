@@ -1,0 +1,236 @@
+<?php echo $this->render('reserve/header.phtml') ?>
+    <div id="main-wrapper">
+    <div id="main">
+    <div id="main-inner">
+    <div id="map-property"></div><!-- /.map-property -->
+    <input type="hidden" id="p_address" value="<?=$this->address ?>,<?=$this->city ?>,<?=$this->country ?>" />
+    <input type="hidden" id="p_title" value="<?=$this->title ?>" />
+    <input type="hidden" id="p_property_icon" value="<?=$this->p_property_icon ?>"" />
+    <input type="hidden" id="p_property_pic" value="<?=$this->p_property_pic ?>"" />
+    <input type="hidden" id="p_latitude" value="<?=$this->p_latitude ?>"" />
+    <input type="hidden" id="p_longitude" value="<?=$this->p_longitude ?>"" />
+    <input type="hidden" id="p_currency_sym" value="<?=$this->currency_symbol ?>" />
+    <input type="hidden" id="p_price" value="<?=$this->price ?>" />
+
+    <div class="container">
+    <div class="block-content block-content-small-padding">
+    <div class="block-content-inner">
+    <div class="row">
+    <div class="col-sm-9">
+        <h2 class="property-detail-title"><?=$this->title ?></h2>
+        <h3 class="property-detail-subtitle"><?=$this->address ?>,<?=$this->city ?>,<?=$this->country ?> <strong><?=$this->currency_symbol ?> &nbsp;<?=$this->price ?></strong> </h3>
+
+        <div class="property-detail-overview">
+            <div class="property-detail-overview-inner clearfix">
+                <div class="property-detail-overview-item col-sm-6 col-md-2">
+                    <strong>Price:</strong>
+                    <span><?=$this->currency_symbol ?> &nbsp;<?=$this->price ?></span>
+                </div><!-- /.property-detail-overview-item -->
+
+                <div class="property-detail-overview-item col-sm-6 col-md-2">
+                    <strong>Type:</strong>
+                    <span><?=$this->p_type ?></span>
+                </div><!-- /.property-detail-overview-item -->
+
+                <div class="property-detail-overview-item col-sm-6 col-md-2">
+                    <strong>Area:</strong>
+                    <span><?=$this->area ?>&nbsp<?=$this->unit ?></span>
+                </div><!-- /.property-detail-overview-item -->
+
+
+                <!--
+                <div class="property-detail-overview-item col-sm-6 col-md-2">
+                    <strong>Baths:</strong>
+                    <span>3</span>
+                </div><!-- /.property-detail-overview-item -->
+
+                <!--
+                <div class="property-detail-overview-item col-sm-6 col-md-2">
+                    <strong>Beds:</strong>
+                    <span>4</span>
+                </div><!-- /.property-detail-overview-item -->
+                <!--
+                <div class="property-detail-overview-item col-sm-6 col-md-2">
+                    <strong>Garages:</strong>
+                    <span>2</span>
+                </div><!-- /.property-detail-overview-item -->
+            </div><!-- /.property-detail-overview-inner -->
+        </div><!-- /.property-detail-overview -->
+
+
+        <?php if($this->galleryflag == true){  ?>
+
+        <div class="flexslider">
+            <ul class="slides">
+                <?php foreach($this->gallery_arry as $g_index => $selected_gallery) { ?>
+
+                <li data-thumb="<?=$this->baseUrl();?>/<?=$selected_gallery["path"]; ?>small/<?=$selected_gallery["image"]?>">
+                    <img src="<?=$this->baseUrl();?>/<?=$selected_gallery["path"]; ?>large/<?=$selected_gallery["image"]?>" alt="<?=$selected_gallery["caption"]; ?>">
+                </li>
+                <?php }  ?>
+
+            </ul><!-- /.slides -->
+        </div><!-- /.flexslider -->
+        <?php }  ?>
+        <hr>
+
+        <h2>Description</h2>
+
+        <p>
+            <?=$this->description ?>
+        </p>
+
+        <hr>
+
+       <?php if($this->amenities["active"] == 1) { ?>
+
+        <h2>Amenities</h2>
+
+        <div class="row">
+            <ul class="property-detail-amenities">
+    <?php foreach($this->amenities as $i => $amenity) { ?>
+            <?php if(is_numeric($i)) { ?>
+            <li class="col-xs-6 col-sm-4"><i class="fa fa-check ok"></i><?=$amenity["amenity_name"] ?></li>
+            <?php } ?>
+    <?php }  ?>
+            </ul>
+
+        </div><!-- /.row -->
+    <?php } // If amenities ?>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="widget">
+                    <h3 class="widget-title">Social Networks</h3>
+
+                    <ul class="social social-boxed">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul><!-- /.social-->
+                </div><!-- /.widget -->                                        <div class="widget">
+                    <h3 class="widget-title">Enquire</h3>
+
+                    <div class="widget-content">
+                        <form method="post" action="?">
+                            <div class="form-group">
+                                <label>Your e-mail</label>
+                                <input type="text" value="" class="form-control">
+                            </div><!-- /.form-group -->
+
+                            <div class="form-group">
+                                <label>Date From</label>
+                                <input type="date" value="" class="form-control">
+                            </div><!-- /.form-group -->
+
+                            <div class="form-group">
+                                <label>Date To</label>
+                                <input type="date" value="" class="form-control">
+                            </div><!-- /.form-group -->
+
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="form-control"></textarea>
+                            </div><!-- /.form-group -->
+
+                            <div class="form-group">
+                                <input type="text" value="Contact" class="btn btn-block btn-primary btn-inversed">
+                            </div><!-- /.form-group -->
+                        </form>
+                    </div><!-- /.widget-content -->
+                </div><!-- /.widget -->                                        <div class="widget">
+                    <h3 class="widget-title">Recent Properties</h3>
+
+                    <div class="properties-small-list">
+                        <div class="property-small clearfix">
+                            <div class="property-small-picture col-sm-12 col-md-4">
+                                <div class="property-small-picture-inner">
+                                    <a href="#" class="property-small-picture-target">
+                                        <img src="<?=$this->baseUrl();?>/assets/img/tmp/properties/small/1.jpg" alt="">
+                                    </a>
+                                </div><!-- /.property-small-picture -->
+                            </div><!-- /.property-small-picture -->
+
+                            <div class="property-small-content col-sm-12 col-md-8">
+                                <h3 class="property-small-title"><a href="#">Evergreen Tr</a></h3><!-- /.property-small-title -->
+                                <div class="property-small-price">$ 1,800 <span class="property-small-price-suffix">/ per month</span></div><!-- /.property-small-price -->
+                            </div><!-- /.property-small-content -->
+                        </div><!-- /.property-small -->
+
+                        <div class="property-small clearfix">
+                            <div class="property-small-picture col-sm-12 col-md-4">
+                                <div class="property-small-picture-inner">
+                                    <a href="#" class="property-small-picture-target">
+                                        <img src="<?=$this->baseUrl();?>/assets/img/tmp/properties/small/3.jpg" alt="">
+                                    </a>
+                                </div><!-- /.property-small-picture -->
+                            </div><!-- /.property-small-picture -->
+
+                            <div class="property-small-content col-sm-12 col-md-8">
+                                <h3 class="property-small-title"><a href="#">Everett Ave</a></h3><!-- /.property-small-title -->
+                                <div class="property-small-price">$ 1,800 <span class="property-small-price-suffix">/ per month</span></div><!-- /.property-small-price -->
+                            </div><!-- /.property-small-content -->
+                        </div><!-- /.property-small -->
+
+                        <div class="property-small clearfix">
+                            <div class="property-small-picture col-sm-12 col-md-4">
+                                <div class="property-small-picture-inner">
+                                    <a href="#" class="property-small-picture-target">
+                                        <img src="<?=$this->baseUrl();?>/assets/img/tmp/properties/small/4.jpg" alt="">
+                                    </a>
+                                </div><!-- /.property-small-picture -->
+                            </div><!-- /.property-small-picture -->
+
+                            <div class="property-small-content col-sm-12 col-md-8">
+                                <h3 class="property-small-title"><a href="#">Jefferson Blvd</a></h3><!-- /.property-small-title -->
+                                <div class="property-small-price">$ 1,800 <span class="property-small-price-suffix">/ per month</span></div><!-- /.property-small-price -->
+                            </div><!-- /.property-small-content -->
+                        </div><!-- /.property-small -->
+                    </div><!-- /.properties-small-list -->
+                </div><!-- /.widget -->
+                <div class="widget">
+                    <?php if($this->agent["count"] >0) { ?>
+                    <h3 class="widget-title">Assigned Agents</h3>
+                    <div class="agent-small">
+                        <div class="agent-small-top">
+                            <div class="clearfix">
+                                <div class="agent-small-picture col-sm-12">
+                                    <div class="agent-small-picture-inner">
+                                        <a href="#" class="agent-small-picture-inner ">
+                                            <?php if(file_exists($_SERVER['DOCUMENT_ROOT'].$this->dirpath."/".$this->agent["agent"]["imagepath"])) { ?>
+                                              <img src="<?=$this->baseUrl();?>/<?=$this->agent["agent"]["imagepath"] ?>" alt="">
+                                            <?php }else{ ?>
+
+                                            <img src="<?=$this->baseUrl();?>/assets/img/tmp/agents/medium/1.jpg" alt="">
+                                            <?php } ?>
+                                        </a><!-- /.agent-small-picture-target -->
+                                    </div><!-- /.agent-small-picture-inner -->
+                                </div><!-- /.agent-small-picture -->
+                            </div><!-- /.row -->
+                        </div><!-- /.agent-small-top -->
+
+                        <div class="agent-small-bottom">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-name"></i><?=$this->agent["agent"]["title"]." ".$this->agent["agent"]["first_name"]." ".$this->agent["agent"]["last_name"] ?>
+                                <li><i class="fa fa-map-marker"></i><?=$this->agent["agent"]["address"].",".$this->agent["agent"]["city_name"].",".$this->agent["agent"]["short_name"] ?>
+                                <li><i class="fa fa-phone"></i><?=$this->agent["agent"]["phone_number"] ?>
+                                <li><i class="fa fa-at"></i> <a href="mailto:<?=$this->agent["agent"]["email_id"] ?>"><?=$this->agent["agent"]["email_id"] ?></a>
+                            </ul>
+                        </div><!-- /.agent-small-bottom -->
+                    </div><!-- /.agent-small -->
+                    <?php } ?>
+                </div><!-- /.widget -->                                    </div><!-- /.sidebar-inner -->
+        </div><!-- /.sidebar -->
+    </div>
+    </div><!-- /.row -->
+    </div><!-- /.block-content-inner -->
+    </div><!-- /.block-content -->
+    </div><!-- /.container -->
+    </div><!-- /#main-inner -->
+    </div><!-- /#main -->
+    </div><!-- /#main-wrapper -->
+<?php echo $this->render('reserve/footer.phtml') ?>

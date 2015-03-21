@@ -1,0 +1,353 @@
+<?php echo $this->render('reserve/header.phtml') ?>
+
+    <div id="main-wrapper">
+    <div id="main">
+    <div id="main-inner">
+    <div class="container">
+    <div class="block-content block-content-small-padding">
+    <div class="block-content-inner">
+    <h2 class="center">Submit Property</h2>
+
+   <!-- <form method="post"> -->
+    <h3>Basic</h3>
+    <div class="box">
+
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control">
+        </div><!-- /.form-group -->
+
+
+
+
+        <div class="form-group">
+            <div class="row">
+            <div class="col-sm-3">
+            <label>Property Type</label>
+            <div class="select-wrapper">
+                <select class="form-control">
+                    <option value="rent">Rent</option>
+                    <option value="sale">Sale</option>
+                </select>
+            </div>
+            </div>
+            <div class="col-sm-3">
+                <label>Property Category</label>
+                <div class="select-wrapper">
+                    <select class="form-control">
+                        <option value="apartment">Apartment</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+        </div> <!-- /.form-group -->
+
+
+        <div class="form-group">
+            <div class="row">
+             <div class="col-sm-3">
+                 <label>Currency</label>
+                 <div class="select-wrapper">
+                     <select class="form-control">
+                         <option value="USD">USD</option>
+                     </select>
+                 </div>
+             </div>
+            <div class="col-sm-3">
+            <label>Price</label>
+
+            <input type="text" class="form-control">
+
+            </div>
+
+            <div class="col-sm-3">
+            <label>Per night price</label>
+            <input type="radio" name="pricebreakup" class="">
+            <label>Total price</label>
+            <input type="radio" name="pricebreakup" class="">
+            </div>
+
+
+            </div>
+
+        </div><!-- /.form-group -->
+
+
+        <div class="form-group">
+        <div class="row">
+        <div class="col-sm-3">
+            <label>Area</label>
+            <input type="text" name="area" class="form-control">
+        </div>
+        <div class="col-sm-3">
+            <label>Unit</label>
+            <input type="text" name="unit" class="form-control">
+        </div>
+
+        </div>
+        </div><!-- /.form-group -->
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" rows="6"></textarea>
+        </div><!-- /.form-group -->
+
+
+        <div class="form-group">
+            <div class="row">
+
+            <div class="col-sm-2">
+            <label>From Date</label>
+            <input type="text" name="fromdate" class="form-control">
+                    (if applicable)
+            </div>
+
+            <div class="col-sm-2">
+            <label>To Date</label>
+            <input type="text" name="todate" class="form-control">
+            (if applicable)
+             </div>
+
+             <div class="col-sm-2">
+                 <label>Expiry Date</label>
+                 <input type="text" name="expirydate" class="form-control">
+                 (if applicable)
+             </div>
+
+                <div class="col-sm-2">
+                    <label>Min nights</label>
+                    <input type="text" name="minnights" class="form-control">
+                    (if applicable)
+                </div><!-- /.form-group -->
+
+                <div class="col-sm-2">
+                    <label>Accommodates</label>
+                    <input type="text" name="accommodates" class="form-control">
+                    (if applicable)
+                </div><!-- /.form-group -->
+         </div>
+        </div><!-- /.form-group -->
+
+
+        <div class="form-group">
+        <div class="row">
+
+            <div class="col-sm-3">
+            <label>Property status</label>
+            <div class="select-wrapper">
+                <select class="form-control" name="pstatus">
+                    <option value="active">Active</option>
+                    <option value="inactive" selected="selected">Inactive</option>
+                </select>
+            </div>
+            </div>
+            <div class="col-sm-3">
+                <label>Admin approval status</label>
+                <input type="text" name="aprovalstatus" value="Pending" class="form-control">
+
+            </div>
+        </div>
+        </div><!-- /.form-group -->
+
+
+
+    </div><!-- /.box -->
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <h3>Location</h3>
+
+            <div class="box">
+                <div class="form-group">
+                    <label>Country</label>
+
+                    <div class="select-wrapper">
+                        <select id="select-country" class="form-control processlocation">
+
+                            <?php if(is_array($this->country_arry)){ ?>
+                                <option value="">Select Country</option>
+                            <?php foreach($this->country_arry as $selcountry){ ?>
+                            <option value="<?=$selcountry["short_name"] ?>"><?=$selcountry["short_name"] ?></option>
+                            <?php } ?>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>City</label>
+
+                        <input type="text" id="select-city" value="Enter city name" class="form-control processlocation" >
+
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+
+                        <input type="text" name="address" class="form-control processlocation">
+
+                </div>
+
+
+
+                <div class="form-group">
+                    <label>Latitude</label>
+
+                        <input type="text" name="latitude" id="latitude" readonly class="form-control">
+
+                </div>
+                <div class="form-group">
+                    <label>Longitude</label>
+
+                        <input type="text" name="longitude" id="longitude" readonly  class="form-control">
+
+                </div>
+
+                <div class="form-group">
+                    <label>Closest matching address:</label>
+
+                    <input type="text" name="markerStatus" id="markerStatus"  readonly class="form-control">
+
+                </div>
+
+                <div class="form-group">
+                    <label>Pin your location on the Map</label>
+
+                    <div id="mapCanvas"></div>
+
+                </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>Photos</h3>
+
+            <div class="box">
+                <!-- The file upload form used as target for the file upload widget -->
+                <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+                    <!-- Redirect browsers with JavaScript disabled to the origin page -->
+                    <noscript><input type="hidden" name="redirect" value=""></noscript>
+                    <input type="hidden" name="umode" id="umode" value="properties">
+                    <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+                    <div class="row fileupload-buttonbar">
+                        <div class="col-lg-7">
+                            <!-- The fileinput-button span is used to style the file input field as button -->
+                <span class="btn btn-success fileinput-button">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    <span>Add files...</span>
+                    <input type="file" name="files[]" multiple>
+                </span>
+                            <button type="submit" class="btn btn-primary start">
+                                <i class="glyphicon glyphicon-upload"></i>
+                                <span>Start upload</span>
+                            </button>
+                            <button type="reset" class="btn btn-warning cancel">
+                                <i class="glyphicon glyphicon-ban-circle"></i>
+                                <span>Cancel upload</span>
+                            </button>
+                            <button type="button" class="btn btn-danger delete">
+                                <i class="glyphicon glyphicon-trash"></i>
+                                <span>Delete</span>
+                            </button>
+                            <input type="checkbox" class="toggle">
+                            <!-- The global file processing state -->
+                            <span class="fileupload-process"></span>
+                        </div>
+                        <!-- The global progress state -->
+                        <div class="col-lg-5 fileupload-progress fade">
+                            <!-- The global progress bar -->
+                            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                            </div>
+                            <!-- The extended global progress state -->
+                            <div class="progress-extended">&nbsp;</div>
+                        </div>
+                    </div>
+                    <!-- The table listing the files available for upload/download -->
+                    <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+                </form>
+
+                <!-- The blueimp Gallery widget -->
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">p</a>
+                    <a class="next">n</a>
+                    <a class="close">CLOSE</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                </div>
+            </div><!-- /.box -->
+        </div><!-- /.col-sm-3 -->
+    </div><!-- /.row -->
+
+    <h3>Amenities</h3>
+
+    <div class="box clearfix">
+        <ul class="submit-property-list list-unstyled">
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Air conditioning</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Balcony</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Bedding</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Cable TV</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Cleaning after exit</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Cofee pot</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Computer</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Cot</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Dishwasher</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">DVD</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Fan</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Fridge</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Grill</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Hairdryer</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Heating</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Hi-fi</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Internet</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Iron</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Juicer</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Lift</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Microwave</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Oven</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Parking</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Parquet</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Radio</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Roof terrace</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Smoking allowed</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Terrace</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Toaster</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Towelwes</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Use of pool</label></li>
+            <li class="checkbox col-sm-3"><label><input type="checkbox">Video</label></li>
+        </ul>
+    </div><!-- /.box -->
+
+    <div class="box">
+        <div class="form-group checkbox">
+            <label><input type="checkbox"> Send me newsletter</label>
+        </div><!-- /.form-group -->
+
+        <div class="form-group checkbox">
+            <label><input type="checkbox"> I agree with <a href="#">terms and conditions</a></label>
+        </div><!-- /.form-group -->
+    </div><!-- /.form-group -->
+
+    <div class="form-group center">
+        <input type="submit" value="Submit Property" class="btn btn-inversed btn-primary">
+    </div><!-- /.form-group -->
+   <!-- </form> -->
+    </div><!-- /.block-content-inner -->
+    </div><!-- /.block-content -->
+    </div><!-- /.container -->
+    </div><!-- /#main-inner -->
+    </div><!-- /#main -->
+    </div><!-- /#main-wrapper -->
+<?php echo $this->render('reserve/footer.phtml') ?>
