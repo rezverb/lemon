@@ -1,0 +1,1 @@
+["C:\/xampp\/htdocs\/GIT\/lemon\/public","uploads\/properties","800","520","500","200","150","80","80"]......./GIT/lemon/public/index.php......./GIT/lemon/public/manage/uploadhandler/......./GIT/lemon/public/GIT/lemon/public/manage/uploadhandler

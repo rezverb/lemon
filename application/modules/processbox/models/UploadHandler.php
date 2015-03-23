@@ -59,12 +59,13 @@ class Processbox_Model_UploadHandler
 
 
 
-       // $d = fopen("debug.txt","w");
-       // fwrite($d,$_SERVER['SCRIPT_NAME'].".......");
-     //   fwrite($d,$_SERVER['REQUEST_URI'].".......");
-      //  fwrite($d,substr($_SERVER['SCRIPT_NAME'],0, strrpos($_SERVER['SCRIPT_NAME'], '/')));
-     //   fwrite($d,substr($_SERVER['REQUEST_URI'],0, strrpos($_SERVER['REQUEST_URI'], '/')));
-    //    fclose($d);
+//        $d = fopen("debugdebug.txt","w");
+//	    fwrite($d,json_encode($umode).".......");
+//        fwrite($d,$_SERVER['SCRIPT_NAME'].".......");
+//        fwrite($d,$_SERVER['REQUEST_URI'].".......");
+//        fwrite($d,substr($_SERVER['SCRIPT_NAME'],0, strrpos($_SERVER['SCRIPT_NAME'], '/')));
+//        fwrite($d,substr($_SERVER['REQUEST_URI'],0, strrpos($_SERVER['REQUEST_URI'], '/')));
+//        fclose($d);
         $this->options = array(
             'script_url' => $this->get_full_url().'/',
             'request_url' => $_SERVER['REQUEST_URI'],
@@ -246,7 +247,7 @@ class Processbox_Model_UploadHandler
 
     protected function get_full_url() {
 
-       // return "/dup/lemon/discoverurproperty/public/manage/test2";
+
 
         $https = !empty($_SERVER['HTTPS']) && strcasecmp($_SERVER['HTTPS'], 'on') === 0 ||
             !empty($_SERVER['HTTP_X_FORWARDED_PROTO']) &&
@@ -317,8 +318,8 @@ class Processbox_Model_UploadHandler
 
     protected function set_additional_file_properties($file) {
 
-       // $d = fopen("debug3.txt","w");
-
+//        $d = fopen("debug3.txt","w");
+//
 //        fwrite($d,json_encode($this->options));
 //        fwrite($d,$this->options['request_url']);
 //
@@ -1429,9 +1430,9 @@ class Processbox_Model_UploadHandler
         $response = array();
         foreach($file_names as $file_name) {
             $file_path = $this->get_upload_path($file_name);
-            $d = fopen("debug2.txt","w");
-            fwrite($d,$file_path);
-            fclose($d);
+//            $d = fopen("debug2.txt","w");
+//            fwrite($d,$file_path);
+//            fclose($d);
             $success = is_file($file_path) && $file_name[0] !== '.' && unlink($file_path);
             if ($success) {
                 foreach($this->options['image_versions'] as $version => $options) {

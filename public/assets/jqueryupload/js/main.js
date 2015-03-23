@@ -9,8 +9,11 @@
  * http://www.opensource.org/licenses/MIT
  */
 
+
 /* global $, window */
 "input[name*='man']"
+ path = '/GIT/lemon/public/manage/uploadhandler/';
+
 $(function () {
     //alert($("input[name='umode']").val());
     'use strict';
@@ -18,7 +21,7 @@ $(function () {
     $('#fileupload').fileupload({
         // Uncomment the following to send cross-domain cookies:
         //xhrFields: {withCredentials: true},
-        url: '/dup/lemon/discoverurproperty/public/manage/uploadhandler/',
+        url: path,
         formData: {umode: $("input[name='umode']").val()},
         // Enable image resizing, except for Android and Opera,
         // which actually support image resizing, but fail to

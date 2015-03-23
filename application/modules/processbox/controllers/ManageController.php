@@ -11,7 +11,9 @@ class Processbox_ManageController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
-
+	    $path = Zend_Registry::getInstance()->constants->fullpath;
+	    $propertyimagesettings = Zend_Registry::getInstance()->constants->propertyimagesettings;
+	    $_SESSION["umode"] = "$path|uploads/".$propertyimagesettings;
         $manageproperty_obj = new Processbox_Model_ManageProperty();
         $country_arry =$manageproperty_obj->get_country();
         $this->view->country_arry = $country_arry;
@@ -36,7 +38,7 @@ class Processbox_ManageController extends Zend_Controller_Action
     {
 
 
-        $path = "D:/xampp/htdocs/dup/lemon/discoverurproperty/public";
+        $path = Zend_Registry::getInstance()->constants->fullpath;
         $_SESSION["umode"] = "$path|uploads/properties|800|520|500|200|150|80|80";
 
         $this->view->autocomplete = "";

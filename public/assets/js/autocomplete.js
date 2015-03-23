@@ -3,7 +3,7 @@
  */
 
 
-var url = "http://localhost/dup/lemon/discoverurproperty/public/manage/getcity?countrycode=";
+var url = "http://localhost/GIT/lemon/public/manage/getcity?countrycode=";
 var country_code = "in";
 $("#select-city").click(function(){
     $(this).val("");

@@ -14,7 +14,7 @@ class UploadHandler
 {
 
     protected $options;
-    protected $uploadpathpath = "D:/xampp/htdocs/dup/lemon/discoverurproperty/public/uploads/properties";
+    protected $uploadpathpath;
 
     // PHP File Upload error message codes:
     // http://php.net/manual/en/features.file-upload.errors.php
@@ -43,6 +43,7 @@ class UploadHandler
 
     function __construct($options = null, $initialize = true, $error_messages = null) {
         $this->response = array();
+	    $uploadpathpath = Zend_Registry::getInstance()->constants->fullpath."/uploads/properties";
         $this->options = array(
             'script_url' => $this->get_full_url().'/',
             'upload_dir' => dirname($this->get_server_var('SCRIPT_FILENAME')).'/files/',
