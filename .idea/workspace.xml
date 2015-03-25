@@ -86,19 +86,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploadjs.phtml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="uploadjs.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/uploadjs.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="92" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.47887325" vertical-offset="1377" max-vertical-offset="2227">
+            <state line="91" column="0" selection-start="4202" selection-end="4202" vertical-scroll-proportion="-2.1794872" vertical-offset="1377" max-vertical-offset="2227">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.min2.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap.min2.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/css/bootstrap.min2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="8" selection-start="3064" selection-end="3067" vertical-scroll-proportion="-5.826923" vertical-offset="3811" max-vertical-offset="114291">
+            <state line="232" column="35" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.29424778" vertical-offset="3811" max-vertical-offset="114291">
               <folding />
             </state>
           </provider>
@@ -525,7 +525,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -693,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/css/bootstrap.min2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="8" selection-start="3064" selection-end="3067" vertical-scroll-proportion="-5.826923" vertical-offset="3811" max-vertical-offset="114291">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/configs/application.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="31" selection-start="1144" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="918">
@@ -744,7 +737,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/uploadjs.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="92" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.47887325" vertical-offset="1377" max-vertical-offset="2227">
+        <state line="91" column="0" selection-start="4202" selection-end="4202" vertical-scroll-proportion="-2.1794872" vertical-offset="1377" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/css/bootstrap.min2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="232" column="35" selection-start="2963" selection-end="2963" vertical-scroll-proportion="0.29424778" vertical-offset="3811" max-vertical-offset="114291">
           <folding />
         </state>
       </provider>
