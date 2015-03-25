@@ -35,25 +35,34 @@
       <file leaf-file-name="UploadHandler.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/processbox/models/UploadHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1304" column="54" selection-start="51642" selection-end="51642" vertical-scroll-proportion="-5.423077" vertical-offset="21733" max-vertical-offset="24633">
+            <state line="58" column="0" selection-start="2189" selection-end="2189" vertical-scroll-proportion="-2.7692308" vertical-offset="689" max-vertical-offset="24633">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManageController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/processbox/controllers/ManageController.php">
+      <file leaf-file-name="mapjs.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/mapjs.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1462">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/footer.phtml">
+      <file leaf-file-name="map1.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/map1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="13" selection-start="10141" selection-end="10141" vertical-scroll-proportion="0.59398496" vertical-offset="3809" max-vertical-offset="4369">
+            <state line="100" column="23" selection-start="2475" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2686">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="8" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="6902">
               <folding />
             </state>
           </provider>
@@ -71,18 +80,25 @@
       <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="204.92308" vertical-offset="5685" max-vertical-offset="6086">
-              <folding>
-                <element signature="e#9481#9498#0" expanded="true" />
-              </folding>
+            <state line="257" column="66" selection-start="8668" selection-end="8668" vertical-scroll-proportion="-1.3461539" vertical-offset="4299" max-vertical-offset="6086">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="uploadjs.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="uploadjs.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/uploadjs.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="29" selection-start="1133" selection-end="1134" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="2210">
+            <state line="93" column="92" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.47887325" vertical-offset="1377" max-vertical-offset="2227">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min2.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/css/bootstrap.min2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="242" column="8" selection-start="3064" selection-end="3067" vertical-scroll-proportion="-5.826923" vertical-offset="3811" max-vertical-offset="114291">
               <folding />
             </state>
           </provider>
@@ -91,10 +107,8 @@
       <file leaf-file-name="jquery.fileupload.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/js/jquery.fileupload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="45" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="25041">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="22" column="45" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24888">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,31 +123,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/headeruploadfile.phtml" />
-        <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/header.phtml" />
-        <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/uploadjs.phtml" />
         <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/test2.phtml" />
         <option value="$PROJECT_DIR$/public/assets/css/map1.css" />
-        <option value="$PROJECT_DIR$/public/assets/js/map1.js" />
         <option value="$PROJECT_DIR$/public/assets/jqueryupload/server/UploadHandler.php" />
         <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/test.phtml" />
         <option value="$PROJECT_DIR$/public/assets/js/autocomplete.js" />
         <option value="$PROJECT_DIR$/docs/README.txt" />
         <option value="$PROJECT_DIR$/public/assets/jqueryupload/js/main.js" />
-        <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/index.phtml" />
         <option value="$PROJECT_DIR$/application/modules/processbox/models/UploadHandler.php" />
         <option value="$PROJECT_DIR$/application/configs/application.ini" />
         <option value="$PROJECT_DIR$/application/modules/processbox/controllers/ManageController.php" />
         <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/footer.phtml" />
+        <option value="$PROJECT_DIR$/public/assets/jqueryupload/css/style.css" />
+        <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/index.phtml" />
+        <option value="$PROJECT_DIR$/public/assets/jqueryupload/css/bootstrap.min2.css" />
+        <option value="$PROJECT_DIR$/public/assets/js/map1.js" />
+        <option value="$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/uploadjs.phtml" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1440" />
-    <option name="y" value="45" />
-    <option name="width" value="1382" />
-    <option name="height" value="742" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -161,6 +173,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,54 +257,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="discoverurproperty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lemon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jqueryupload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="discoverurproperty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lemon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jqueryupload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -479,12 +444,36 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="4952e510-9354-49b1-b0be-6bb3a70e823f">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="aa54abd8-1c7f-4fbc-a30c-ed24b5e096f0">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="f5acbda6-32a1-4a9e-976e-6b7d2799452c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -536,16 +525,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1440" y="45" width="1382" height="742" extended-state="1" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2262295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.053691275" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21961933" sideWeight="0.7737705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22222222" sideWeight="0.94630873" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -573,46 +562,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/test2.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6698">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/realocation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/operation1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/uploads/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="539">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="256" selection-end="256" vertical-scroll-proportion="0.41535777" vertical-offset="0" max-vertical-offset="6902">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/map1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2686">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="539" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/main/index.phtml">
@@ -629,9 +581,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/js/main.js">
+    <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="59" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+        <state line="14" column="3" selection-start="266" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/processbox/controllers/ManageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/footer.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="6" selection-start="10134" selection-end="10134" vertical-scroll-proportion="-15.538462" vertical-offset="3642" max-vertical-offset="4369">
+          <folding>
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427287095241" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="257" column="66" selection-start="8668" selection-end="8668" vertical-scroll-proportion="-1.3461539" vertical-offset="4299" max-vertical-offset="6086">
           <folding />
         </state>
       </provider>
@@ -639,18 +689,14 @@
     <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/js/jquery.fileupload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="45" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="25041">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/manage/index.phtml">
+    <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/css/bootstrap.min2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="576" selection-end="576" vertical-scroll-proportion="204.92308" vertical-offset="5685" max-vertical-offset="6086">
-          <folding>
-            <element signature="e#9481#9498#0" expanded="true" />
-          </folding>
+        <state line="242" column="8" selection-start="3064" selection-end="3067" vertical-scroll-proportion="-5.826923" vertical-offset="3811" max-vertical-offset="114291">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -663,28 +709,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/processbox/models/UploadHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1304" column="54" selection-start="51642" selection-end="51642" vertical-scroll-proportion="-5.423077" vertical-offset="21733" max-vertical-offset="24633">
+        <state line="58" column="0" selection-start="2189" selection-end="2189" vertical-scroll-proportion="-2.7692308" vertical-offset="689" max-vertical-offset="24633">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/processbox/controllers/ManageController.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/jqueryupload/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="196" selection-end="196" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="1462">
+        <state line="47" column="59" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/map1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="23" selection-start="2475" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="1428" max-vertical-offset="2686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="8" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="6902">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/mapjs.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="517">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/uploadjs.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="1133" selection-end="1134" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="2210">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/processbox/views/scripts/reserve/footer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="13" selection-start="10141" selection-end="10141" vertical-scroll-proportion="0.59398496" vertical-offset="3809" max-vertical-offset="4369">
+        <state line="93" column="92" selection-start="4296" selection-end="4296" vertical-scroll-proportion="0.47887325" vertical-offset="1377" max-vertical-offset="2227">
           <folding />
         </state>
       </provider>
