@@ -11,12 +11,22 @@ class Processbox_ManageController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
+
 	    $path = Zend_Registry::getInstance()->constants->fullpath;
 	    $propertyimagesettings = Zend_Registry::getInstance()->constants->propertyimagesettings;
 	    $_SESSION["umode"] = "$path|uploads/".$propertyimagesettings;
-        $manageproperty_obj = new Processbox_Model_ManageProperty();
-        $country_arry =$manageproperty_obj->get_country();
+	    $this->view->guest_id = 1;
+        $manageproperty_obj = new Processbox_Model_ManageProperty($this->view->guest_id);
+        $country_arry = $manageproperty_obj->get_country();
+	    $this->view->currency_arry = $manageproperty_obj->get_currency();
+	    $this->view->units_arry = $manageproperty_obj->get_unit();
+
+	    $this->view->apartment_category   = $manageproperty_obj->get_apartment_category();
+	    $this->view->property_id   = $manageproperty_obj->get_property_id();
+	    $this->view->basic_details = $manageproperty_obj->get_basic_details();
+	    
         $this->view->country_arry = $country_arry;
+
 
     }
 

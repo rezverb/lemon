@@ -14,7 +14,7 @@
 
         <div class="form-group">
             <label>Title</label>
-            <input type="text" class="form-control">
+            <input type="text" value="<?=$this->basic_details["title"]?>"  name="basic_title" class="form-control">
         </div><!-- /.form-group -->
 
 
@@ -25,17 +25,21 @@
             <div class="col-sm-3">
             <label>Property Type</label>
             <div class="select-wrapper">
-                <select class="form-control">
-                    <option value="rent">Rent</option>
-                    <option value="sale">Sale</option>
+                <select class="form-control" name="basic_ptype">
+                    <option value="0" <?php  echo ($this->basic_details["ptype"] == 0)?" selected":""   ?>  >Rent</option>
+                    <option value="1" <?php  echo ($this->basic_details["ptype"] == 1)?" selected":""   ?>  >Sale</option>
                 </select>
             </div>
             </div>
             <div class="col-sm-3">
                 <label>Property Category</label>
                 <div class="select-wrapper">
-                    <select class="form-control">
-                        <option value="apartment">Apartment</option>
+                    <select class="form-control" name="basic_pcategory">
+
+	                    <?php foreach($this->apartment_category as $key => $apartment_category){ ?>
+						<option value="<?=$key ?>" <?php  echo ($this->basic_details["pcategory"] == $key)?" selected":""   ?>  ><?=$apartment_category["name"] ?></option>
+
+	                    <? } ?>
                     </select>
                 </div>
               </div>
@@ -48,23 +52,27 @@
              <div class="col-sm-3">
                  <label>Currency</label>
                  <div class="select-wrapper">
-                     <select class="form-control">
-                         <option value="USD">USD</option>
+                     <select class="form-control" name="basic_pcurrency" >
+	                     <?php foreach($this->currency_arry as $key => $curreny_list){ ?>
+		                     <option value="<?=$key ?>" <?php  echo ($this->basic_details["pcurrency"] == $key)?" selected":""   ?>  ><?=$curreny_list["name"] ?></option>
+
+	                     <? } ?>
+
                      </select>
                  </div>
              </div>
             <div class="col-sm-3">
             <label>Price</label>
 
-            <input type="text" class="form-control">
+            <input type="text" value="<?=$this->basic_details["price"]?>"  name="basic_price"  class="form-control">
 
             </div>
 
             <div class="col-sm-3">
             <label>Per night price</label>
-            <input type="radio" name="pricebreakup" class="">
+            <input type="radio" name="basic_pricemode"     class="">
             <label>Total price</label>
-            <input type="radio" name="pricebreakup" class="">
+            <input type="radio" name="basic_pricemode" class="">
             </div>
 
 
@@ -77,18 +85,27 @@
         <div class="row">
         <div class="col-sm-3">
             <label>Area</label>
-            <input type="text" name="area" class="form-control">
+            <input type="text" name="basic_area"  value="<?=$this->basic_details["area"]?>" class="form-control">
         </div>
         <div class="col-sm-3">
             <label>Unit</label>
-            <input type="text" name="unit" class="form-control">
+	        <div class="select-wrapper">
+		        <select class="form-control" name="basic_unit" >
+			        <?php foreach($this->units_arry as $key => $units_list){ ?>
+				        <option value="<?=$key ?>" <?php  echo ($this->basic_details["unit"] == $key)?" selected":""   ?>  ><?=$units_list["name"] ?></option>
+
+			        <? } ?>
+
+		        </select>
+	        </div>
+
         </div>
 
         </div>
         </div><!-- /.form-group -->
         <div class="form-group">
             <label>Description</label>
-            <textarea class="form-control" rows="6"></textarea>
+            <textarea class="form-control" rows="6" name="basic_desc"><?=$this->basic_details["desc"]?></textarea>
         </div><!-- /.form-group -->
 
 
@@ -97,31 +114,31 @@
 
             <div class="col-sm-2">
             <label>From Date</label>
-            <input type="text" name="fromdate" class="form-control">
+            <input type="text" name="basic_fromdate"  value="<?=$this->basic_details["fromdate"]?>" class="form-control">
                     (if applicable)
             </div>
 
             <div class="col-sm-2">
             <label>To Date</label>
-            <input type="text" name="todate" class="form-control">
+            <input type="text" name="basic_todate" value="<?=$this->basic_details["todate"]?>"  class="form-control">
             (if applicable)
              </div>
 
              <div class="col-sm-2">
                  <label>Expiry Date</label>
-                 <input type="text" name="expirydate" class="form-control">
+                 <input type="text" name="basic_expirydate" value="<?php echo date("d-m-Y",strtotime($this->basic_details["expiredate"])) ?>"  class="form-control">
                  (if applicable)
              </div>
 
                 <div class="col-sm-2">
                     <label>Min nights</label>
-                    <input type="text" name="minnights" class="form-control">
+                    <input type="text" name="basic_minnights" value="<?=$this->basic_details["minnight"]?>" class="form-control">
                     (if applicable)
                 </div><!-- /.form-group -->
 
                 <div class="col-sm-2">
                     <label>Accommodates</label>
-                    <input type="text" name="accommodates" class="form-control">
+                    <input type="text" name="basic_accommodates"  value="<?=$this->basic_details["accommodate"]?>" class="form-control">
                     (if applicable)
                 </div><!-- /.form-group -->
          </div>
@@ -134,21 +151,32 @@
             <div class="col-sm-3">
             <label>Property status</label>
             <div class="select-wrapper">
-                <select class="form-control" name="pstatus">
-                    <option value="active">Active</option>
-                    <option value="inactive" selected="selected">Inactive</option>
+                <select class="form-control" name="basic_property_status">
+                    <option value="1"    <?php  echo ($this->basic_details["property_status"] == 1)?" selected":"" ?> >Active</option>
+                    <option value="0"  <?php    echo ($this->basic_details["property_status"] == 0)?" selected":"" ?> >Inactive</option>
                 </select>
             </div>
             </div>
             <div class="col-sm-3">
                 <label>Admin approval status</label>
-                <input type="text" name="aprovalstatus" value="Pending" class="form-control">
+	            <?php  if($this->basic_details["admin_approval"] == 0){  $admin_approval = "Pending";  } ?>
+	            <?php  if($this->basic_details["admin_approval"] == 1){  $admin_approval = "Approved";  } ?>
+                <input type="text" name="basic_admin_approval" value="<?=$admin_approval ?>" class="form-control">
 
             </div>
+
+
         </div>
+
         </div><!-- /.form-group -->
 
-
+	    <div class="form-group">
+		    <div class="row">
+			    <div class="col-sm-3">
+				    <input type="submit" value="Save Basic Info" class="btn btn-inversed btn-primary">
+			    </div>
+		    </div>
+	    </div>
 
     </div><!-- /.box -->
 
